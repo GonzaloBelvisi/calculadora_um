@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f0f0f0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.calculator {
+  background: #333;
+  border-radius: 20px;
+  padding: 20px 15px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.display {
+  background: #000;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 0 10px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.buttons .btn {
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons .number,
+.buttons .decimal {
+  background: #444;
+  color: #fff;
+}
+
+.buttons .zero {
+  grid-column: span 2;
+}
+
+
+.buttons .operator,
+.buttons .equals {
+  background: #ff9500;
+  color: #fff;
+}
+
+.buttons .clear,
+.buttons .sign,
+.buttons .percent {
+  background: #aaa;
+  color: #000;
+}
+
+
+.buttons .btn:active {
+  opacity: 0.8;
+}
